@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
-import List from './components/List';
+import Eventos from './components/Eventos';
+import Form from './components/Form';
 
 function App() {
-  const nome= 'Maria'
+  
   return (
     <div className="App">
-      <h1>Testando CSS</h1>
-      <Frase />
-      <Frase />
-      <Frase />
-      <SayMyName nome= 'Mateus'/>
-      <SayMyName nome= 'João'/>
-      <SayMyName nome= {nome}/>
-      <Pessoa nome= 'Rodrigo' idade= '28' profissao= 'programador' foto= 'https://via.placeholder.com/150' />
-      <List />
+      <h1>Testando eventos</h1>
+      <Eventos numero='1'/>
+      <Eventos numero='2'/>
+      <Form />
     </div>
   );
 }
