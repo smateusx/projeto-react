@@ -6,7 +6,7 @@ import SubmitButton from '../form/SubmitButton'
 
 import styles from './ProjectForm.module.css'
 
-function ProjectForm({handleSumit, btnText, projectData}) {
+function ProjectForm({handleSubmit, btnText, projectData}) {
     const [categories, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
 
@@ -27,7 +27,7 @@ function ProjectForm({handleSumit, btnText, projectData}) {
     const submit = (e) => {
         e.preventDefault()
         //console.log(project)
-        handleSumit(project)
+        handleSubmit(project)
         
     }
 
