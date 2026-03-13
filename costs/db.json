@@ -65,6 +65,17 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "e25c",
+      "name": "design teste 1",
+      "budget": "50000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [

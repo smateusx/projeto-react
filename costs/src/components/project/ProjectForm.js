@@ -8,6 +8,7 @@ import styles from './ProjectForm.module.css'
 
 function ProjectForm({handleSubmit, btnText, projectData}) {
     const [categories, setCategories] = useState([])
+    console.log(categories)
     const [project, setProject] = useState(projectData || {})
 
     useEffect(() => {
@@ -39,7 +40,7 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
         setProject({ ...project, 
             category: {
             id: e.target.value,
-            name: e.target.options [e.target.selectedIndex].text,
+            name: e.target.options[e.target.selectedIndex].text,
             },
         })
     }
